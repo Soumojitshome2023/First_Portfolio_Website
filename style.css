@@ -412,3 +412,73 @@ p {
 }
 
 /* End Keyframes */
+
+
+
+/* Responsive  */
+@media only screen and (max-width: 600px){
+
+	#header .nav-bar {
+		display: block;
+		padding-top: 20px;
+		
+	}
+	#hero h1:nth-child(1) {
+		font-size: 2rem;
+	}
+	
+	#hero h1:nth-child(2) {
+		font-size: 3rem;
+	}
+	
+	#hero h1:nth-child(3) {
+		font-size: 4rem;
+	}
+
+	.brand h1 {
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: white;
+	}
+	
+	.section-title {
+		font-weight: 30;
+		margin-bottom: 10px;
+		
+		letter-spacing: 0.1rem;
+		font-size: 3rem;
+	}
+	
+	#about .col-left {
+		width: 300px;
+		height: 300px;
+		padding-left: 6px;
+	}
+
+	#about .col-right p {
+		margin-bottom: 10px;
+		font-size: 1.5rem;
+	}
+
+	#about .about {
+		flex-direction: column;
+	}
+
+	#contact .contact-item {
+		margin: 20px;
+		padding: 10px;
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.contact-items{
+		flex-direction: column;
+	}
+
+	#footer p {
+		font-size: 1.2rem;
+	}
+
+}
+
+
