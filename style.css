@@ -53,17 +53,65 @@ p {
 	color: rgb(187, 20, 220);
 }
 
+.section-title:hover {
+	cursor: pointer;
+	transition: 0.3s;
+	color: rgb(176, 118, 214);
+	color: #fff;
+	color: #fff;
+	text-shadow:
+		0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 21px #fff,
+		0 0 42px #bc13fe,
+		0 0 82px #bc13fe,
+		0 0 92px #bc13fe,
+		0 0 102px #bc13fe,
+		0 0 151px #bc13fe;
+
+}
+
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
 	color: white;
+	margin: 10px;
+
 }
 
 .brand h1 span {
 	color: rgb(220, 217, 20);
 }
 
+.logo-text .logo img {
+	width: 40px;
+	height: 40px;
+	margin: 7px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 15px 0 #fcff5b;
+
+}
+
+.logo-text .logo img:hover {
+	cursor: pointer;
+	transition: 0.3s;
+	box-shadow: 0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 21px #fff,
+		0 0 42px #bc13fe,
+		0 0 82px #bc13fe,
+		0 0 92px #bc13fe,
+		0 0 102px #bc13fe,
+		0 0 151px #bc13fe;
+
+}
+
+.logo-text {
+	display: flex;
+}
+
 .brand a :hover {
+	transition: 0.3s;
 	color: rgb(176, 118, 214);
 	color: #fff;
 	color: #fff;
@@ -206,6 +254,7 @@ p {
 }
 
 #hero h1:nth-child(3):hover {
+	transition: 0.3s;
 	text-shadow:
 		0 0 7px #fff,
 		0 0 10px #fff,
@@ -227,7 +276,7 @@ p {
 	text-align: center;
 	margin: 0 auto;
 	padding: 50px 10px;
-	
+
 	background-image: url(bg_about_me.jpg);
 	background-size: cover;
 	background-position: top center;
@@ -253,6 +302,8 @@ p {
 	height: 400px;
 	padding-left: 60px;
 }
+
+
 
 #about .col-right {
 	width: 100%;
@@ -282,6 +333,19 @@ p {
 	width: 100%;
 	position: relative;
 	border: 10px solid rgb(137, 84, 172);
+}
+
+#about .col-left .about-img:hover {
+	transition: 0.3s;
+	box-shadow: 0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 21px #fff,
+		0 0 42px #bc13fe,
+		0 0 82px #bc13fe,
+		0 0 92px #bc13fe,
+		0 0 102px #bc13fe,
+		0 0 151px #bc13fe;
+
 }
 
 #about .about {
@@ -416,21 +480,22 @@ p {
 
 
 /* Responsive  */
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
 
 	#header .nav-bar {
 		display: block;
 		padding-top: 20px;
-		
+
 	}
+
 	#hero h1:nth-child(1) {
 		font-size: 2rem;
 	}
-	
+
 	#hero h1:nth-child(2) {
 		font-size: 3rem;
 	}
-	
+
 	#hero h1:nth-child(3) {
 		font-size: 4rem;
 	}
@@ -440,15 +505,17 @@ p {
 		text-transform: uppercase;
 		color: white;
 	}
-	
+
+
+
 	.section-title {
 		font-weight: 30;
 		margin-bottom: 10px;
-		
+
 		letter-spacing: 0.1rem;
 		font-size: 3rem;
 	}
-	
+
 	#about .col-left {
 		width: 300px;
 		height: 300px;
@@ -471,7 +538,7 @@ p {
 		width: 90%;
 	}
 
-	.contact-items{
+	.contact-items {
 		flex-direction: column;
 	}
 
@@ -480,5 +547,3 @@ p {
 	}
 
 }
-
-
