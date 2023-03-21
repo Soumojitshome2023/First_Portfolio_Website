@@ -488,6 +488,13 @@ p {
 
 	}
 
+	#header .nav-list ul a {
+		padding: 7px;
+		font-size: 1.3rem;
+		font-weight: 300;
+		letter-spacing: 0.06rem;
+	}
+
 	#hero h1:nth-child(1) {
 		font-size: 2rem;
 	}
