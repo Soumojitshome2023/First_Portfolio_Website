@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumojit Shome feedback</title>
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="message.css">
+</head>
+
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <!-- form start  -->
+                <form name="submit-to-google-sheet">
+                    <h2>Welcome</h2>
+
+                    <div class="inputbox">
+                        <input type="name" name="name" required>
+                        <label for="">Name</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="text" name="contact" required>
+                        <label for="">Contact Details</label>
+                    </div>
+
+
+                    <div class="inputbox">
+                        <input type="text" name="message" required>
+                        <label for="">Message</label>
+                    </div>
+
+                    <div class="btn">
+                        <input type="submit" onclick="myFunction()">
+                    </div>
+
+                    <div id="back">
+                        <a href="index.html" data-after="Index">Back</a>
+                    </div>
+                </form>
+                <!-- form end  -->
+
+
+
+                <!-- Js to send data in google sheet  -->
+                <script>
+                    function myFunction() {
+                        const scriptURL = 'https://script.google.com/macros/s/AKfycbzGuAVReGeYRT6s9Qb71qSGQ6E6AQkbdO89XMN4i4ToXN5SnxwjXQsWBa1Zc6GkJqxo6A/exec'
+                        const form = document.forms['submit-to-google-sheet']
+
+                        form.addEventListener('submit', e => {
+                            e.preventDefault()
+                            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                                .then(response => console.log('Success!', response))
+                                .catch(error => console.error('Error!', error.message))
+                        })
+
+
+                        // alert("Message Sent Successfully, Thanks for Your Message. Click OK");
+                        // setTimeout("location.href = 'thanks.html';", 1000);
+                        setTimeout("open('thanks.html');", 1000);
+                        // open('thanks.html');
+                        setTimeout("window.close()",3000)
+                    }
+                </script>
+
+                <!-- js end  -->
+
+            </div>
+        </div>
+
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

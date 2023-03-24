@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <title>Thanks</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* outline:1px solid ;*/
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-image: url(bg_thanks.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
+
+        .wrapper-1 {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: transparent;
+            backdrop-filter: blur(60px);
+            box-shadow: 4px 8px 40px 8px rgba(202, 36, 218, 0.925);
+            height: initial;
+            max-width: 620px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .wrapper-2 {
+            padding: 90px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 4em;
+            letter-spacing: 3px;
+            color: #fcfcfc;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        .wrapper-2 p {
+            margin: 0;
+            font-size: 1.6em;
+            color: #ffffff;
+            text-shadow: rgb(67, 57, 71);
+            font-family: 'Source Sans Pro', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .go-home {
+            background: #732791;
+            border: none;
+            padding: 10px 50px;
+            margin: 30px 0;
+            border-radius: 30px;
+            text-transform: capitalize;
+        }
+
+        .go-home:hover {
+            background-color: rgb(169, 79, 221);
+            box-shadow: 0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #bc13fe,
+                0 0 82px #bc13fe,
+                0 0 92px #bc13fe,
+                0 0 102px #bc13fe,
+                0 0 151px #bc13fe;
+        }
+
+        .go-home a {
+            text-decoration: none;
+            color: #e1e8ed;
+            font-size: 20px;
+            background-color: rgba(102, 51, 153, 0);
+        }
+
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .wrapper-2 {
+                padding: 15px;
+            }
+
+            .wrapper-2 p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class=content>
+        <div class="wrapper-1">
+            <div class="wrapper-2">
+                <h1>Thank you !</h1>
+                <p>Thanks a bunch for filling that out. It means a lot to us, just like you do! We really appreciate you
+                    giving us a moment of your time today. Thanks for being you.</p>
+
+                <button class="go-home">
+                    <a href="index.html">go home</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        setTimeout("window.close()",20000)
+    </script>
+</body>
+
+</html>
