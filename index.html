@@ -84,10 +84,12 @@
       </div>
       <div class="contact-items">
         <div class="contact-item">
-          <div class="icon"><img src="phone.webp" /></div>
+          <div class="icon"><img src="mail.webp" /></div>
           <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>9062300500</h2>
+            <a href="message.html" target="_blank" data-after="Message">
+              <h1>Message</h1>
+              <h2>Text</h2>
+            </a>
           </div>
         </div>
         <div class="contact-item">
@@ -128,6 +130,11 @@
     </div>
   </section>
   <!-- End Footer -->
+  <script>
+    document.addEventListener('contextmenu',
+      event => event.preventDefault());
+    el_down.innerHTML = "Right click disabled";
+  </script>
 </body>
 
 </html>
