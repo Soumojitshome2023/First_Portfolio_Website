@@ -120,7 +120,12 @@
         </div>
     </div>
     <script>
-        setTimeout("window.close()",20000)
+        setTimeout("window.close()", 20000)
+    </script>
+    <script>
+        document.addEventListener('contextmenu',
+            event => event.preventDefault());
+        el_down.innerHTML = "Right click disabled";
     </script>
 </body>
 
